@@ -1,7 +1,40 @@
-# Vue 3 + Vite
+# Wihire Website Automation Test Repository
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+Link Website [Govokasi](.)
 
-## Recommended IDE Setup
+## Getting Started
 
-- [VS Code](https://code.visualstudio.com/) + [Vue - Official](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (previously Volar) and disable Vetur
+### Preparation
+
+Make sure you have installed the following software :
+
+1. [Node.js](https://nodejs.org/)
+2. [npm](https://www.npmjs.com/)
+
+### Installation
+
+1. Clone This Repository
+
+    ```bash
+    git clone https://github.com/fajrinnurhakim/Govokasi-Company-Profile.git
+
+    ```
+
+2. Navigate to the folder
+
+    ```bash
+    cd govokasi-company-profile
+
+    ```
+
+3. Install depencdencier
+
+    ```bash
+    npm install
+
+    ```
+
+4. Run the project
+    ```bash
+    npm run cypress
+    ```
