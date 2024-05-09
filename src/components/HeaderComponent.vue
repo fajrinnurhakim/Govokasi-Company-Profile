@@ -2,11 +2,10 @@
   <div class="navigation">
     <img src="/logo.png" alt="logo" class="logo" /><img />
     <ul class="menu" :class="{ aktif: isMenuActive }">
-      <li><a href="#header">Header</a></li>
+      <li><a href="#home">Home</a></li>
       <li><a href="#service">Service</a></li>
       <li><a href="#company">Company</a></li>
       <li><a href="#abput">About us</a></li>
-      <li><a href="#contact">Contact us</a></li>
     </ul>
 
     <div class="button" @click="toggleMenu">&#9776;</div>

@@ -1,7 +1,7 @@
 <script></script>
 
 <template>
-  <div>Header</div>
+  <div>Home</div>
 </template>
 
 <style scoped></style>

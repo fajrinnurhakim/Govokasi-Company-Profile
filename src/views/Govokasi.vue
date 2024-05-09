@@ -1,21 +1,19 @@
 <script>
-import HeaderSection from '../components/HeaderSection.vue';
+import HomeSection from '../components/HomeSection.vue';
 import ServiceSection from '../components/ServiceSection.vue';
 import CompanyValuesSection from '../components/CompanyValuesSection.vue';
 import AboutUsSection from '../components/AboutUsSection.vue';
-import ContactInfoSection from '../components/ContactInfoSection.vue';
 import FooterComponent from '../components/FooterComponent.vue';
-import NavbarComponent from '../components/NavbarComponent.vue';
+import HeaderComponent from '../components/HeaderComponent.vue';
 
 export default {
   components: {
-    HeaderSection,
+    HomeSection,
     ServiceSection,
     CompanyValuesSection,
     AboutUsSection,
-    ContactInfoSection,
     FooterComponent,
-    NavbarComponent,
+    HeaderComponent,
   },
 };
 </script>
@@ -23,10 +21,10 @@ export default {
 <template>
   <div>
     <navbar>
-      <NavbarComponent class="navbar" />
+      <HeaderComponent class="navbar" />
     </navbar>
-    <section id="header">
-      <HeaderSection class="container" />
+    <section id="home">
+      <HomeSection class="container" />
     </section>
     <section id="service">
       <ServiceSection class="container" />
@@ -36,9 +34,6 @@ export default {
     </section>
     <section id="about">
       <AboutUsSection class="container" />
-    </section>
-    <section id="contact">
-      <ContactInfoSection class="container" />
     </section>
     <footer>
       <FooterComponent class="footer" />
