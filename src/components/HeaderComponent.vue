@@ -5,9 +5,8 @@
       <li><a href="#home">Home</a></li>
       <li><a href="#service">Service</a></li>
       <li><a href="#company">Company</a></li>
-      <li><a href="#abput">About us</a></li>
+      <li><a href="#about">About us</a></li>
     </ul>
-
     <div class="button" @click="toggleMenu">&#9776;</div>
   </div>
 </template>
