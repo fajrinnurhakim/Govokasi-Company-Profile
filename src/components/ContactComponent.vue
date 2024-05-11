@@ -1,7 +1,7 @@
 <script></script>
 
 <template>
-  <div>company</div>
+  <div>Contact</div>
 </template>
 
 <style scoped></style>

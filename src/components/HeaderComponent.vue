@@ -3,9 +3,10 @@
     <img src="/logo.png" alt="logo" class="logo" /><img />
     <ul class="menu" :class="{ aktif: isMenuActive }">
       <li><a href="#home" :class="{ aktif: isMenuActive }">Home</a></li>
-      <li><a href="#service">Service</a></li>
-      <li><a href="#company">Company</a></li>
       <li><a href="#about">About us</a></li>
+      <li><a href="#service">Our Service</a></li>
+      <li><a href="#company">Company Values</a></li>
+      <li><a href="#contact">Contact Us</a></li>
     </ul>
     <div class="button" @click="toggleMenu">&#9776;</div>
   </div>

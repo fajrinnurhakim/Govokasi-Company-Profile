@@ -3,6 +3,7 @@ import HomeSection from '../components/HomeSection.vue';
 import ServiceSection from '../components/ServiceSection.vue';
 import CompanyValuesSection from '../components/CompanyValuesSection.vue';
 import AboutUsSection from '../components/AboutUsSection.vue';
+import ContactComponent from '../components/ContactComponent.vue';
 import FooterComponent from '../components/FooterComponent.vue';
 import HeaderComponent from '../components/HeaderComponent.vue';
 
@@ -12,6 +13,7 @@ export default {
     ServiceSection,
     CompanyValuesSection,
     AboutUsSection,
+    ContactComponent,
     FooterComponent,
     HeaderComponent,
   },
@@ -26,14 +28,17 @@ export default {
     <section id="home">
       <HomeSection class="container" />
     </section>
+    <section id="about">
+      <AboutUsSection class="container" />
+    </section>
     <section id="service">
       <ServiceSection class="container" />
     </section>
     <section id="company">
       <CompanyValuesSection class="container" />
     </section>
-    <section id="about">
-      <AboutUsSection class="container" />
+    <section id="contact">
+      <ContactComponent class="container" />
     </section>
     <footer>
       <FooterComponent class="footer" />
@@ -42,7 +47,27 @@ export default {
 </template>
 
 <style scoped>
-section {
+section#home {
+  height: 100vh;
+  width: 100%;
+  background-color: white;
+}
+section#about {
+  height: 100vh;
+  width: 100%;
+  background-color: white;
+}
+section#service {
+  height: 100vh;
+  width: 100%;
+  background-color: white;
+}
+section#company {
+  height: 100vh;
+  width: 100%;
+  background-color: white;
+}
+section#contact {
   height: 100vh;
   width: 100%;
   background-color: white;
