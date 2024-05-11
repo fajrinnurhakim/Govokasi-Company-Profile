@@ -50,7 +50,7 @@ export default {
 section#home {
   height: 100vh;
   width: 100%;
-  background-color: white;
+  background-color: #1C1A65;
 }
 section#about {
   height: 100vh;
