@@ -63,7 +63,7 @@ section#service {
   background-color: white;
 }
 section#company {
-  height: 100vh;
+  height: auto;
   width: 100%;
   background-color: white;
 }
@@ -98,5 +98,26 @@ navbar {
   margin: auto;
   padding: 12px 0px;
   width: 90%;
+}
+
+@media (max-width: 768px) {
+  .navbar,
+  .footer,
+  .container {
+    width: 95%;
+    padding: 8px 0px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar,
+  .footer,
+  .container {
+    width: 97%;
+    padding: 4px 0px;
+  }
+  section {
+    height: auto;
+  }
 }
 </style>
