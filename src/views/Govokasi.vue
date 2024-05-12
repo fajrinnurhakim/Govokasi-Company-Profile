@@ -60,17 +60,19 @@ section#about {
 section#service {
   height: 100vh;
   width: 100%;
-  background-color: white;
+  background-color: #110f5e;
 }
 section#company {
   height: auto;
   width: 100%;
   background-color: white;
+  padding: 36px 0px;
 }
 section#contact {
-  height: 100vh;
+  height: auto;
   width: 100%;
-  background-color: white;
+  background-color: #110f5e;
+  padding: 36px 0px;
 }
 
 footer {
