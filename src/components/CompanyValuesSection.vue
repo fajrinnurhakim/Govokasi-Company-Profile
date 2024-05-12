@@ -66,7 +66,7 @@
   flex-direction: column;
 }
 .title {
-  font-size: 42pt;
+  font-size: 36pt;
   font-weight: bold;
   color: #110f5e;
   margin-bottom: 24px;
