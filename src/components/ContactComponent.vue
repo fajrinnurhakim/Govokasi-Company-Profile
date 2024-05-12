@@ -1,4 +1,15 @@
-<script></script>
+<script>
+export default {
+  methods: {
+    openInternLink() {
+      window.open('https://bit.ly/GVInternsReg', '_blank');
+    },
+    openPartnerLink() {
+      window.open('https://form.smartsuite.com/swgnyg44/1tg7zwCLDC', '_blank');
+    },
+  },
+};
+</script>
 
 <template>
   <div class="contactsection">
@@ -15,8 +26,12 @@
         coaching to help companies cultivate the interns potential.
       </p>
       <div class="button-container">
-        <button class="btn-intern">LOOKING FOR INTERSHIP OPPORTUNITY</button>
-        <button class="btn-partner">JOIN US AS COMPANY PARTNERS</button>
+        <button @click="openInternLink" class="btn-intern">
+          LOOKING FOR INTERSHIP OPPORTUNITY
+        </button>
+        <button @click="openPartnerLink" class="btn-partner">
+          JOIN US AS COMPANY PARTNERS
+        </button>
       </div>
     </div>
     <div class="contact">
@@ -58,7 +73,7 @@
 }
 .register {
   display: flex;
-  flex-basis: 49%;
+  flex-basis: 60%;
   flex-direction: column;
 }
 
@@ -122,12 +137,12 @@
 }
 
 .contact {
-  flex-basis: 49%;
+  flex-basis: 35%;
 }
 .card {
   width: 100%;
   height: max-content;
-  padding: 48px;
+  padding: 24px;
   background-color: #ffffff;
   display: flex;
   flex-direction: column;
