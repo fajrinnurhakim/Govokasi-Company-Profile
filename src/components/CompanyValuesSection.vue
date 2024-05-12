@@ -99,6 +99,12 @@
   border-radius: 32px;
   box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.2);
   margin-bottom: 20px;
+  transition: transform 1s ease, background-color 1s ease, color 1s ease;
+}
+.card:hover {
+  background-color: #110f5e;
+  transform: scale(1.05);
+  color: #ffffff;
 }
 
 .card > *:not(:last-child) {
