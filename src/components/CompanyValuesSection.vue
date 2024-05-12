@@ -90,7 +90,7 @@
 .card {
   flex-basis: 23%;
   height: auto;
-  padding: 18px;
+  padding: 32px 18px;
   display: flex;
   flex-direction: column;
   background-color: white;
