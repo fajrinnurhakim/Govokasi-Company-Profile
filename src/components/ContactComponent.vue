@@ -73,7 +73,7 @@ export default {
 }
 .register {
   display: flex;
-  flex-basis: 60%;
+  flex-basis: 55%;
   flex-direction: column;
 }
 
@@ -137,7 +137,7 @@ export default {
 }
 
 .contact {
-  flex-basis: 35%;
+  flex-basis: 40%;
 }
 .card {
   width: 100%;
@@ -165,7 +165,7 @@ export default {
   margin-right: 24px;
 }
 .contact-content {
-  width: 80%;
+  width: 100%;
   display: flex;
   flex-direction: column;
 }
