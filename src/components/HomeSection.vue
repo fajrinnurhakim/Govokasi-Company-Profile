@@ -14,7 +14,7 @@
         We are ready to help you find the right career direction according to
         your potential and goals.
       </p>
-      <div class="button">Learn More</div>
+      <div class="button"><a href="#about" class="link">Learn More</a></div>
     </div>
     <div class="image-container">
       <img src="../assets/HomeImage.png" />
@@ -77,5 +77,8 @@
 .garis {
   display: flex;
   align-items: center;
+}
+.link {
+  text-decoration: none;
 }
 </style>
