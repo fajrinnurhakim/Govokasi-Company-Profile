@@ -50,7 +50,7 @@ export default {
 section#home {
   height: 100vh;
   width: 100%;
-  background-color: #1C1A65;
+  background-color: #1c1a65;
 }
 section#about {
   height: 100vh;
@@ -84,6 +84,7 @@ navbar {
   box-shadow: -3px 0px 2px rgba(0, 0, 0, 0.4);
   background-color: white;
   position: fixed;
+  z-index: 99;
 }
 
 .navbar {

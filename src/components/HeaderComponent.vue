@@ -2,7 +2,7 @@
   <div class="navigation">
     <img src="/logo.png" alt="logo" class="logo" /><img />
     <ul class="menu" :class="{ aktif: isMenuActive }">
-      <li><a href="#home" :class="{ aktif: isMenuActive }">Home</a></li>
+      <li><a href="#home">Home</a></li>
       <li><a href="#about">About us</a></li>
       <li><a href="#service">Our Service</a></li>
       <li><a href="#company">Company Values</a></li>
@@ -35,6 +35,7 @@ export default {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  z-index: 99;
 }
 .button {
   display: none;
@@ -63,27 +64,41 @@ export default {
   text-decoration: none;
   display: inline-block;
   padding: 12px;
+  transition: background-color 1s ease;
+  border-radius: 12px;
 }
 
 .menu li a:hover {
   color: #110f5e;
   background-color: #fddc58;
-  border-radius: 12px;
 }
 
 @media screen and (max-width: 768px) {
   .menu {
     display: none;
   }
-
+  .button {
+    padding: 6px;
+    border-radius: 6px;
+    color: #000000;
+    transition: background-color ease-in-out 2s;
+  }
+  .button:hover {
+    padding: 6px;
+    background-color: #110f5e;
+    border-radius: 6px;
+    color: #ffffff;
+  }
   .menu.aktif {
     display: block;
     position: absolute;
-    top: 50px;
-    background: rgba(247, 247, 247, 1);
+    top: 55px;
+    background: #ffffff;
     right: 0;
     left: 0;
     text-align: center;
+    transition: opacity 2s ease, top 2s ease-in-out;
+    opacity: 1;
   }
 
   .menu.aktif li a {
