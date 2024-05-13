@@ -1,6 +1,6 @@
 <template>
   <div class="navigation">
-    <img src="/logo.png" alt="logo" class="logo" /><img />
+    <img src="../assets/logos.png" alt="logo" class="logo" /><img />
     <ul class="menu" :class="{ aktif: isMenuActive }">
       <li><a href="#home">Home</a></li>
       <li><a href="#about">About us</a></li>
@@ -60,7 +60,7 @@ export default {
 
 .menu li a {
   padding: 10px;
-  color: black;
+  color: white;
   text-decoration: none;
   display: inline-block;
   padding: 12px;
@@ -80,7 +80,7 @@ export default {
   .button {
     padding: 6px;
     border-radius: 6px;
-    color: #000000;
+    color: #ffffff;
     transition: background-color ease-in-out 2s;
   }
   .button:hover {
@@ -92,8 +92,8 @@ export default {
   .menu.aktif {
     display: block;
     position: absolute;
-    top: 55px;
-    background: #ffffff;
+    top: 48px;
+    background: linear-gradient(to right, #110f5e, #010021);
     right: 0;
     left: 0;
     text-align: center;

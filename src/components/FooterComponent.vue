@@ -40,6 +40,8 @@
   text-align: center;
   align-self: center;
   font-size: 12pt;
+  background-color: #ffffff;
+  padding: 12px 0px;
 }
 
 .lokasi {
@@ -83,6 +85,9 @@
 @media (max-width: 480px) {
   .box {
     flex-direction: column;
+  }
+  .box2 {
+    background-color: white;
   }
   .lokasi {
     font-size: 10pt;

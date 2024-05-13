@@ -7,7 +7,9 @@
       <div class="garis">
         <span class="box"></span>
         <h1 class="title">
-          DISCOVER YOUR CAREER<span class="title2"> <br />WITH GOVOKASI</span>
+          BUILD YOUR DREAM CAREER<span class="title2">
+            <br />WITH GOVOKASI</span
+          >
         </h1>
       </div>
       <p class="paragraf">
@@ -17,7 +19,7 @@
       <div class="button"><a href="#about" class="link">Learn More</a></div>
     </div>
     <div class="image-container">
-      <img src="../assets/HomeImage.png" />
+      <img class="image-content" src="../assets/home-image.svg" />
     </div>
   </div>
 </template>
@@ -28,6 +30,7 @@
   align-items: center;
 }
 .row {
+  width: 50%;
   display: flex;
   flex-direction: column;
 }
@@ -42,12 +45,11 @@
   font-size: 30pt;
   font-weight: bold;
   color: #fddc58;
-  margin-bottom: 24px;
-  font-family: "Bernoru", sans-serif;
+  font-family: 'Bernoru', sans-serif;
 }
 .title2 {
   color: #ffffff;
-  font-family: "Bernoru", sans-serif;
+  font-family: 'Bernoru', sans-serif;
 }
 .box {
   background-color: transparent;
@@ -56,7 +58,7 @@
   height: 182px;
 }
 .paragraf {
-  font-size: 12px;
+  font-size: 12pt;
   color: white;
 }
 .button {
@@ -73,6 +75,7 @@
 }
 .button:hover {
   transform: scale(1.1);
+  background-color: #ffcc00;
 }
 .garis {
   display: flex;
@@ -80,5 +83,80 @@
 }
 .link {
   text-decoration: none;
+}
+.image-container {
+  width: 50%;
+  height: auto;
+}
+.image-content {
+  width: 100%;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    display: flex;
+    align-items: center;
+  }
+  .logo-image {
+    height: auto;
+    width: 200px;
+  }
+  .title {
+    font-size: 18pt;
+  }
+  .box {
+    height: 120px;
+  }
+  .paragraf {
+    font-size: 12pt;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    display: flex;
+    align-items: center;
+  }
+  .logo-image {
+    height: auto;
+    width: 150px;
+  }
+  .title {
+    font-size: 16pt;
+  }
+  .box {
+    height: 90px;
+  }
+  .paragraf {
+    font-size: 11pt;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .row {
+    width: 95%;
+    align-items: center;
+  }
+  .logo-image {
+    display: none;
+  }
+  .title {
+    font-size: 16pt;
+    text-align: center;
+  }
+  .box {
+    display: none;
+  }
+  .paragraf {
+    font-size: 10pt;
+    text-align: center;
+  }
+  .button {
+    margin-bottom: 24px;
+  }
 }
 </style>

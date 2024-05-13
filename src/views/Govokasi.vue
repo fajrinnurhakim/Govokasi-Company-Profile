@@ -49,8 +49,8 @@ export default {
 </script>
 
 <template>
-  <div>
-    <navbar :class="{ 'sticky-header': isSticky }">
+  <div class="app">
+    <navbar clas="nav" :class="{ 'sticky-header': isSticky }">
       <HeaderComponent class="navbar" />
     </navbar>
     <section id="home">
@@ -68,17 +68,22 @@ export default {
     <section id="contact">
       <ContactComponent class="container" />
     </section>
-    <footer class="footer">
-      <FooterComponent class="container" />
+    <footer>
+      <div class="footer">
+        <FooterComponent class="container" />
+      </div>
     </footer>
   </div>
 </template>
 
 <style scoped>
+.app {
+  background: linear-gradient(to right, #110f5e, #010021);
+}
 section#home {
-  height: 100vh;
+  height: auto;
   width: 100%;
-  background-color: #1c1a65;
+  background: linear-gradient(to right, #110f5e, #010021);
 }
 section#about {
   height: 100vh;
@@ -105,18 +110,25 @@ section#contact {
 
 footer {
   width: 100%;
+  background-color: #ffffff;
+}
+.footer {
+  width: 90%;
+  margin: auto;
 }
 navbar {
   width: 100%;
   box-shadow: -3px 0px 2px rgba(0, 0, 0, 0.4);
-  background-color: white;
+}
+.nav {
+  background: linear-gradient(to right, #110f5e, #010021);
 }
 .sticky-header {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
   z-index: 1000;
+  background: linear-gradient(to right, #110f5e, #010021);
 }
 
 .navbar {
@@ -128,11 +140,6 @@ navbar {
   margin: auto;
   width: 90%;
   padding: 72px 0px;
-}
-.footer {
-  margin: auto;
-  padding: 12px 0px;
-  width: 90%;
 }
 
 @media (max-width: 768px) {
