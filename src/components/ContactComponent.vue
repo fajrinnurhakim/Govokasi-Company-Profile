@@ -182,9 +182,11 @@ export default {
 }
 
 @media (max-width: 1024px) {
-  .contact,
-  .register {
+  .contact {
     flex-basis: 40%;
+  }
+  .register {
+    flex-basis: 50%;
   }
   .title-contact {
     font-size: 36px;
