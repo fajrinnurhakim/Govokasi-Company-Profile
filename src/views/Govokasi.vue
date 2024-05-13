@@ -17,12 +17,40 @@ export default {
     FooterComponent,
     HeaderComponent,
   },
+  data() {
+    return {
+      isSticky: false,
+    };
+  },
+  mounted() {
+    this.handleInitialScroll();
+    window.addEventListener('scroll', this.handleScroll);
+  },
+  destroyed() {
+    window.removeEventListener('scroll', this.handleScroll);
+  },
+  methods: {
+    handleInitialScroll() {
+      if (window.scrollY === 0) {
+        this.isSticky = false;
+      } else {
+        this.isSticky = true;
+      }
+    },
+    handleScroll() {
+      if (window.scrollY > 1 && !this.isSticky) {
+        this.isSticky = true;
+      } else if (window.scrollY === 0 && this.isSticky) {
+        this.isSticky = false;
+      }
+    },
+  },
 };
 </script>
 
 <template>
   <div>
-    <navbar>
+    <navbar :class="{ 'sticky-header': isSticky }">
       <HeaderComponent class="navbar" />
     </navbar>
     <section id="home">
@@ -82,8 +110,13 @@ navbar {
   width: 100%;
   box-shadow: -3px 0px 2px rgba(0, 0, 0, 0.4);
   background-color: white;
+}
+.sticky-header {
   position: fixed;
-  z-index: 99;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
 }
 
 .navbar {
@@ -106,7 +139,7 @@ navbar {
   .navbar,
   .footer,
   .container {
-    width: 95%;
+    width: 90%;
     padding: 8px 0px;
   }
 }
@@ -115,7 +148,7 @@ navbar {
   .navbar,
   .footer,
   .container {
-    width: 97%;
+    width: 95%;
     padding: 4px 0px;
   }
   section {
