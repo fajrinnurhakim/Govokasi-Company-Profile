@@ -40,8 +40,8 @@ export default {
     <section id="contact">
       <ContactComponent class="container" />
     </section>
-    <footer>
-      <FooterComponent class="footer" />
+    <footer class="footer">
+      <FooterComponent class="container" />
     </footer>
   </div>
 </template>
@@ -77,7 +77,6 @@ section#contact {
 
 footer {
   width: 100%;
-  box-shadow: -3px -1px 2px rgba(0, 0, 0, 0.4);
 }
 navbar {
   width: 100%;

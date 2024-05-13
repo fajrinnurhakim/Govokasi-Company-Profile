@@ -1,17 +1,18 @@
 <template>
   <box class="box">
     <div class="image-container">
-      <img src="../assets/logo-tagline.png" />
-    </div>
-    <div class="copyright">
-      <p>© 2024 GOVOKASi. All Rights Reserved.</p>
+      <img class="image-logo" src="../assets/logo-tagline.png" />
     </div>
     <div class="lokasi">
       <p>
-        Jl. Raya Belimbing No.88, Babakan Asem<br />
-        Kec. Kosambi, Kabupaten Tangerang,<br />
-        Banten 15212
+        Jl. Raya Belimbing No.88, Babakan Asem Kec. Kosambi, Kabupaten
+        Tangerang, Banten 15212
       </p>
+    </div>
+  </box>
+  <box class="box2">
+    <div class="copyright">
+      <p>© 2024 GOVOKASI. All Rights Reserved.</p>
     </div>
   </box>
 </template>
@@ -21,28 +22,82 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #f0f0f0;
+  background-color: #ffffff;
   padding: 20px;
-  width: 1516px;
-  height: 189px;
 }
 
 .image-container {
-  align-items: start;
-  max-width: 150px;
-  height: 130px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 70%;
+}
+.image-logo {
+  width: 40%;
 }
 
 .copyright {
   text-align: center;
   align-self: center;
-  padding-top: 150px;
+  font-size: 12pt;
 }
 
 .lokasi {
-  padding-top: 20px;
   text-align: right;
-  width: 542px;
-  height: 130px;
+  font-size: 12pt;
+  width: 30%;
+}
+
+@media (max-width: 1024px) {
+  .lokasi {
+    font-size: 12pt;
+    width: 50%;
+  }
+  .copyright {
+    font-size: 12pt;
+  }
+  .image-container {
+    width: 70%;
+  }
+  .image-logo {
+    width: 60%;
+  }
+}
+
+@media (max-width: 768px) {
+  .lokasi {
+    font-size: 11pt;
+    width: 40%;
+  }
+  .copyright {
+    font-size: 11pt;
+  }
+  .image-container {
+    width: 50%;
+  }
+  .image-logo {
+    width: 70%;
+  }
+}
+
+@media (max-width: 480px) {
+  .box {
+    flex-direction: column;
+  }
+  .lokasi {
+    font-size: 10pt;
+    width: 80%;
+    text-align: center;
+  }
+  .copyright {
+    font-size: 10pt;
+  }
+  .image-container {
+    width: 40%;
+    padding-bottom: 12px;
+  }
+  .image-logo {
+    width: 100%;
+  }
 }
 </style>
