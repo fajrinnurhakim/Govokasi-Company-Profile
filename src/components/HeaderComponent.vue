@@ -1,5 +1,5 @@
 <template>
-  <div class="navigation">
+  <div class="navigation" v-motion-slide-visible-bottom>
     <img src="../assets/logos.png" alt="logo" class="logo" /><img />
     <ul class="menu" :class="{ aktif: isMenuActive }">
       <li><a href="#home">Home</a></li>

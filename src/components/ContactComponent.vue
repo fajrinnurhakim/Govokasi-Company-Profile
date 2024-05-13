@@ -13,7 +13,7 @@ export default {
 
 <template>
   <div class="contactsection">
-    <div class="register">
+    <div v-motion-slide-visible-left class="register">
       <h1 class="title-register">
         <span class="box-register"></span>Get In<span class="title2-register">
           Touch</span
@@ -34,7 +34,7 @@ export default {
         </button>
       </div>
     </div>
-    <div class="contact">
+    <div v-motion-slide-visible-right class="contact">
       <div class="card">
         <h1 class="title-contact">
           <span class="box-contact"></span>Contact<span class="title2-contact">

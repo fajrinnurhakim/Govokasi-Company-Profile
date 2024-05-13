@@ -2,7 +2,7 @@
 
 <template>
   <div class="container">
-    <div class="row">
+    <div v-motion-slide-visible-left class="row">
       <img src="../assets/logos.png" class="logo-image" />
       <div class="garis">
         <span class="box"></span>
@@ -18,7 +18,7 @@
       </p>
       <div class="button"><a href="#about" class="link">Learn More</a></div>
     </div>
-    <div class="image-container">
+    <div v-motion-slide-visible-right class="image-container">
       <img class="image-content" src="../assets/home-image.svg" />
     </div>
   </div>

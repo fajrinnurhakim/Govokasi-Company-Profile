@@ -5,7 +5,7 @@
     <h1 class="title">
       <span class="box"></span>Why Choose<span class="title2"> Us?</span>
     </h1>
-    <div class="card-container">
+    <div v-motion-slide-visible-top class="card-container">
       <div class="card">
         <img
           src="../assets/company-value1.svg"
