@@ -1,8 +1,8 @@
 <script></script>
 
 <template>
-  <div class="container">
-    <div v-motion-slide-visible-left class="row">
+  <div class="container" tabindex="0">
+    <div class="row">
       <img src="../assets/logos.png" class="logo-image" />
       <div class="garis">
         <span class="box"></span>
@@ -18,7 +18,7 @@
       </p>
       <div class="button"><a href="#about" class="link">Learn More</a></div>
     </div>
-    <div v-motion-slide-visible-right class="image-container">
+    <div class="image-container">
       <img class="image-content" src="../assets/home-image.svg" />
     </div>
   </div>
