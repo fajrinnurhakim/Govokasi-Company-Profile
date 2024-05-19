@@ -86,9 +86,10 @@ section#home {
   background: linear-gradient(to right, #110f5e, #010021);
 }
 section#about {
-  height: 100vh;
+  height: auto;
   width: 100%;
   background-color: white;
+  padding: 36px 0px;
 }
 section#service {
   height: 100vh;
