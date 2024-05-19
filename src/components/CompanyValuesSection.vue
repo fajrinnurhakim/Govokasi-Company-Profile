@@ -5,8 +5,8 @@
     <h1 class="title">
       <span class="box"></span>Why Choose<span class="title2"> Us?</span>
     </h1>
-    <div v-motion-slide-visible-top class="card-container">
-      <div class="card">
+    <div class="card-container">
+      <div v-motion-slide-visible-left class="card">
         <img
           src="../assets/company-value1.svg"
           alt="card-image"
@@ -18,7 +18,7 @@
           identify their potential and competency.
         </p>
       </div>
-      <div class="card">
+      <div class="card" v-motion-slide-visible-left>
         <img
           src="../assets/company-value2.svg"
           alt="card-image"
@@ -30,7 +30,7 @@
           identify their potential and competency.
         </p>
       </div>
-      <div class="card">
+      <div class="card" v-motion-slide-visible-right>
         <img
           src="../assets/company-value3.svg"
           alt="card-image"
@@ -42,7 +42,7 @@
           identify their potential and competency.
         </p>
       </div>
-      <div class="card">
+      <div class="card" v-motion-slide-visible-right>
         <img
           src="../assets/company-value4.svg"
           alt="card-image"
@@ -173,7 +173,6 @@
   .card-title {
     font-size: 14pt;
   }
-
   .card-body {
     font-size: 10pt;
   }

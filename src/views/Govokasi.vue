@@ -92,9 +92,10 @@ section#about {
   padding: 36px 0px;
 }
 section#service {
-  height: 100vh;
+  height: auto;
   width: 100%;
   background-color: #110f5e;
+  padding: 36px 0px;
 }
 section#company {
   height: auto;
