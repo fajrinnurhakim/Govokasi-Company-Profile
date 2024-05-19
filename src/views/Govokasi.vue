@@ -128,6 +128,8 @@ navbar {
 .sticky-header {
   position: fixed;
   z-index: 1000;
+  top: 0;
+  left: 0;
   width: 100%;
   background: linear-gradient(to right, #110f5e, #010021);
 }
