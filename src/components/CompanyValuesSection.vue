@@ -167,7 +167,7 @@
     font-size: 18pt;
   }
   .card {
-    flex-basis: 80%;
+    flex-basis: 90%;
     border-radius: 12px;
   }
   .card-title {
