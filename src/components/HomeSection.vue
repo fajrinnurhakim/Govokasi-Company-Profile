@@ -2,7 +2,7 @@
 
 <template>
   <div class="container" tabindex="0">
-    <div class="row">
+    <div class="row" v-motion-slide-visible-left>
       <img src="../assets/logos.png" class="logo-image" />
       <div class="garis">
         <span class="box"></span>
